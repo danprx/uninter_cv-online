@@ -1,48 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV Online</title>
-    <link rel="stylesheet" href="./styles/index.css" />
-  </head>
-  <body>
-    <header>
-      <h1 class="icon">CV Online</h1>
-      <nav class="menu">
-        <ul class="option">
-          <a href="/index.html">Sobre mim</a>
-        </ul>
-        <ul class="option">
-          <a href="/pages/education.html">Formação</a>
-        </ul>
-        <ul class="option">
-          <a href="/pages/portifolio.html">Portifólio</a>
-        </ul>
-        <ul class="option">
-          <a href="/pages/contact.html">Contato</a>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <div class="profile">
-        <img
-          class="profile_img"
-          src="images/me.JPG"
-          alt="Foto de Daniel Pereira"
-        />
-        <p class="profile_desc">Daniel P. R. Silva</p>
-      </div>
-      <div class="content">
-        <h2 class="title">Sobre mim</h2>
-        <p class="about">
-          Olá, meu nome é Daniel Pereira e tenho 21 anos de idade. <br />
-          Minha maior paixão é pela música. Ganhei meu primeiro violão com 10
-          anos de idade e minha primeira guitarra com 12, que é o que considero
-          meu instrumento principal. Além disso toco outros instrumentos, como
-          contrabaixo e teclado, além de também cantar.<br />
-        </p>
-      </div>
-    </section>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CV Online - Daniel P R da Silva</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <!-- Cabeçalho do Site -->
+        <header>
+            <!-- Nome do site no cabeçalho -->
+            <h1 class="icon">CV Online</h1>
+            <!-- Menu fixo para navegar pelo site -->
+            <nav class="nav">
+                <ul class="nav_items">
+                    <li class="nav_item">
+                        <a class="nav_link" href="#"><span>Sobre mim</span></a>
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="#education_sec"
+                            ><span>Formação</span></a
+                        >
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="#portifolio_sec"
+                            ><span>Portifólio</span></a
+                        >
+                    </li>
+                    <li class="nav_item">
+                        <a class="nav_link" href="#contact_sec"
+                            ><span>Contato</span></a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Sessão "Sobre mim" do site -->
+        <section id="about-me_sec">
+            <!-- Div que contém uma foto minha e meu nome -->
+            <div class="profile">
+                <img
+                    class="profile_img"
+                    src="images/me.JPG"
+                    alt="Foto de Daniel Pereira"
+                />
+                <p class="profile_desc">Daniel P. R. da Silva</p>
+            </div>
+            <!-- Article que contém o conteúdo da sessão -->
+            <article class="about-me">
+                <h2 class="about-me_title">Sobre mim</h2>
+                <p class="about_me_text">
+                    Olá, meu nome é Daniel Pereira Rolim da Silva e tenho 21
+                    anos de idade.
+                    <br />
+                    Minha maior paixão é pela música. Ganhei meu primeiro violão
+                    com 10 anos de idade e minha primeira guitarra com 12, do
+                    qual considero meu instrumento principal. Além disso toco
+                    outros instrumentos, como contrabaixo e teclado, além de
+                    também cantar.<br />
+                </p>
+            </article>
+        </section>
+        <!-- Sessão "Formações" do site -->
+        <section id="education_sec">
+            <!-- Div responsável pelas Formações acadêmicas -->
+            <div class="education_div">
+                <h2 class="education_title">Formação acadêmica</h2>
+                <div class="education">
+                    <img
+                        class="education_img"
+                        src="../images/logo_uninter.png"
+                        alt="Logo do Centro Universitário Internacional UNINTER"
+                    />
+                    <p class="education_text">
+                        Curso: Técnologo em Análise e Desenvolvimento de
+                        Sistemas<br />
+                        Instituição: Centro Universitário Internacional -
+                        UNINTER<br />
+                        Em curso (novembro/2022 - maio/2025)
+                    </p>
+                </div>
+                <div class="education">
+                    <img
+                        class="education_img"
+                        src="../images/logo_etec.png"
+                        alt="Logo da Etec José Martimiano da Silva de Ribeirão Preto"
+                    />
+                    <p class="education_text">
+                        Curso: Técnico em Automação Industrial<br />
+                        ETEC José Martimiano da Silva | Ribeirão Preto – SP
+                        <br />
+                        Concluído (janeiro/2019 - dezembro/2021)
+                    </p>
+                </div>
+            </div>
+            <!-- Div responsável pela parte "Comunicação" -->
+            <div class="education_div">
+                <h2 class="education_title">Comunicação</h2>
+                <div class="education">
+                    <img
+                        class="education_img"
+                        src="../images/logo_efset.png"
+                        alt="Logo da EF Standard English Test"
+                    />
+                    <p class="education_text">
+                        <a href="https://cert.efset.org/Sw3ctQ" target="_blank">
+                            Certificado Oficial EF SET 66/100 (C1 Advanced)</a
+                        ><br />
+                        EF Standard English Test - EF SET <br />
+                        Concluído (maio/2024)
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Sessão "Portifólio" do site -->
+        <section id="portifolio_sec">
+            <!-- Imagem mostrando minha página no GitHub -->
+            <img
+                class="portifolio_img"
+                src="./images/github_pic.png"
+                alt="Print tirada do GitHub na página de Daniel Pereira"
+            />
+            <!-- Article que contém a parte escrita dizendo sobre meu portifólio com um link para acessar -->
+            <article class="portifolio">
+                <h2 class="portifolio_title">Portifólio</h2>
+                <p class="portifolio_text">
+                    Meu portifólio com todos os meus projetos pode ser acessado
+                    através do seguinte link:
+                    <a
+                        href="http://https://github.com/danprx"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >https://github.com/danprx</a
+                    >
+                    <br /><br />
+                    Aqui você pode acompanhar vários projetos criados ao longo
+                    da minha caminhada como desenvolvedor utilizando diversas
+                    tecnologias, como: Java, Javascript, Python, React, NodeJS.
+                </p>
+            </article>
+        </section>
+        <!-- Sessão "Contato" do site -->
+        <section id="contact_sec">
+            <article class="contact">
+                <!-- Título da sessão e uma mensagem convidativa -->
+                <h2 class="contact_title">Contato</h2>
+                <p class="contact_text">
+                    Entre em contato comigo inserindo seus dados neste
+                    formulário!
+                </p>
+                <!-- Formulário onde o usuário insere suas informações e a mensagem que deseja enviar -->
+                <form class="contact_form">
+                    <div class="input_div">
+                        <label for="name">Nome</label>
+                        <input
+                            class="input-box"
+                            type="text"
+                            name="name"
+                            id="name"
+                        />
+                    </div>
+                    <div class="input_div">
+                        <label for="email">Email</label>
+                        <input
+                            class="input-box"
+                            type="email"
+                            name="email"
+                            id="email"
+                        />
+                    </div>
+                    <div class="input_div">
+                        <label for="message">Mensagem</label>
+                        <textarea
+                            class="input-box"
+                            name="message"
+                            id="message"
+                            rows="5"
+                        ></textarea>
+                    </div>
+                    <!-- Botão para enviar a mensagem :) -->
+                    <input class="button" type="button" value="Enviar" />
+                </form>
+            </article>
+        </section>
+    </body>
 </html>
+<!-- Fim! -->

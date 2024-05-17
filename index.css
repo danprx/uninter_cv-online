@@ -1,0 +1,260 @@
+/* Configurações Gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 1030px;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: #682fb3;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    min-width: 1030px;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.icon {
+    font-size: 2.3rem;
+    margin: 0rem 3rem;
+    align-self: center;
+    color: aliceblue;
+}
+
+.nav {
+    margin: 0rem 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav_items {
+    display: flex;
+    list-style: none;
+}
+
+.nav_item {
+    font-size: 1.5rem;
+    align-self: center;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 26.5px;
+}
+
+.nav_link:hover {
+    color: rgb(184, 146, 255);
+}
+
+/* Sobre mim */
+
+#about-me_sec {
+    margin: 5rem 5rem 0rem;
+    padding: 5rem 5rem 0rem;
+    display: flex;
+}
+
+.about-me {
+    margin: 0rem 5rem;
+}
+
+.about-me_title {
+    margin: 1.5rem 0rem;
+}
+
+.about_me_text {
+    min-width: 15rem;
+    max-width: 50rem;
+}
+
+/* Perfil */
+
+.profile {
+    background-color: rgb(139, 139, 139);
+    max-height: 24.5rem;
+    border: 0.5rem solid black;
+    padding: 0.5rem;
+}
+
+.profile_img {
+    padding: 0.5rem;
+    height: 20rem;
+}
+
+.profile_desc {
+    color: aliceblue;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/* Formações */
+
+#education_sec {
+    margin: 0rem 5rem 0rem;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.education_div {
+    border-top: 0.2rem solid black;
+}
+
+.education_title {
+    font-size: 1.6rem;
+    padding: 3rem 2rem 0rem;
+    margin: 0rem 3rem;
+}
+
+.education {
+    margin: 0rem 3rem;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.education_img {
+    width: 8rem;
+}
+
+.education_text {
+    align-self: center;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+}
+
+/* Portifólio */
+
+#portifolio_sec {
+    margin: 0rem 5rem;
+    padding: 5rem 5rem;
+    border-top: 0.2rem solid black;
+    display: flex;
+}
+
+.portifolio_img {
+    height: 30rem;
+}
+
+.portifolio {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 2rem;
+}
+
+.portifolio_title {
+    margin-bottom: 1.5rem;
+}
+
+.portifolio_text {
+    min-width: 30rem;
+}
+
+/* Contato */
+
+#contact_sec {
+    margin: 0rem 5rem;
+    padding: 5rem;
+    border-top: 0.2rem solid black;
+}
+
+.contact_title {
+    margin-bottom: 1.5rem;
+}
+
+.contact_text {
+    margin: 1.5rem 0rem;
+}
+
+.contact_form {
+    width: 35rem;
+    border: 2px solid darkgray;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.input_div {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    font-size: 1rem;
+    padding: 0.4rem;
+    resize: none;
+}
+
+.input-box:focus {
+    border: 2px solid #682fb3;
+    box-shadow: 3px 3px #be8dff;
+    outline: none;
+}
+
+.button {
+    color: aliceblue;
+    border: 2px solid rgb(184, 146, 255);
+    border-radius: 0.5rem;
+    background-color: #682fb3;
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.button:hover {
+    background-color: rgb(214, 202, 238);
+    border: 2px solid #5a14b4;
+    color: #5a14b4;
+}
+
+/*Media Query */
+
+@media (max-width: 1640px) {
+    #portifolio_sec {
+        flex-direction: column-reverse;
+    }
+
+    .portifolio {
+        margin: 0rem 0rem 1.5rem;
+    }
+
+    .portifolio_img {
+        align-self: center;
+    }
+
+    #contact_sec {
+        display: flex;
+        justify-content: center;
+    }
+
+    .button {
+        align-self: center;
+    }
+}
